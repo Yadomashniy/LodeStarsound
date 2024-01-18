@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0E0E0E ;
+}
+
+.container{
+    width: 800px;
+    height: 500px;
+    padding: 40px 0;
+    position: relative;
+}
+
+.block{
+    height: 100%;
+    background-color: #1D1D1D;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.block__item{
+    width: 50%;
+}
+
+
+.block-item{
+    text-align: center;
+}
+
+.block-item__title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.block-item__btn{
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #0E0E0E;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-box{
+    background-color: #0E0E0E;
+    height: 100%;
+    width: 50%;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    transition: 0.5s ease-in-out;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.form-box.active{
+    left: 50%;
+}
+
+.form{
+    width: 100%;
+    padding: 50px;
+    font-style: 16px;
+
+    position: absolute;
+    transition: 0.5s;
+}
+
+.form_signin{
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+.form_signup{
+    left: 100%;
+    transition-delay: 0s;
+}
+
+.form-box.active .form_signin{
+    left: -100%;
+    transition-delay: 0s;
+}
+
+.form-box.active .form_signup{
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+
+.form__title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.form__input{
+    width: 75%;
+    padding: 10px;
+    border: solid 1px #ffffff;
+    font-size: inherit;
+}
+
+.form_btn{
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: #1D1D1D;
+    color: #ffffff;
+    padding: 10px 50px;
+}
+
+.form__forgot{
+    color: #ffffff;
+}
+
+.form__btn_signup{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
